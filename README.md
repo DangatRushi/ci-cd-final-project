@@ -1,5 +1,7 @@
 # CI/CD Tools and Practices Final Project Template
 
+## Project Name: ci-cd-final-project
+
 This repository contains the template to be used for the Final Project for the Coursera course **CI/CD Tools and Practices**.
 
 ## Usage
@@ -12,27 +14,26 @@ Name your repo: `ci-cd-final-project`.
 
 ## Setup
 
-After entering the lab environment you will need to run the `setup.sh` script in the `./bin` folder to install the prerequisite software.
+After entering the project, you need to run the following command to set up the project:
 
 ```bash
 bash bin/setup.sh
 ```
 
-Then you must exit the shell and start a new one for the Python virtual environment to be activated.
+Then you need to exit the terminal and open a new terminal to continue.
+
+## Running the Tests
+
+As a sanity check, you can run the tests with the following command:
 
 ```bash
-exit
+nosetests
 ```
 
-## Tasks
+## What's featured in the project?
 
+The project features a RESTful API that allows users to manage and track counters, including:
 
-## License
-
-Licensed under the Apache License. See [LICENSE](/LICENSE)
-
-## Author
-
-Skills Network
-
-## <h3 align="center"> © IBM Corporation 2023. All rights reserved. <h3/>
+* `service/routes.py` -- the main Service routes using Python Flask
+* `service/common` -- common log and error handlers
+* `tests/test_routes.py` -- test cases for the microservice
